@@ -10,4 +10,4 @@ Ce projet est destiné à valider les connaissances en DevOps des élèves de 3�
 4. Implémentez une github action pour déployer automatiquement le site sur un hebergement gratuit (Netlify)
 
 ## Test Results
-"# CC1DHELFT" 
+![Statut du build](https://github.com/arthurDh59/CC1DHELFT/actions/workflows/main.yml/badge.svg)
