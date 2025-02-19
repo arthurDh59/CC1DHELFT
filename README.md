@@ -11,3 +11,5 @@ Ce projet est destiné à valider les connaissances en DevOps des élèves de 3�
 
 ## Test Results
 ![Statut du build](https://github.com/arthurDh59/CC1DHELFT/actions/workflows/main.yml/badge.svg)
+
+herberger sur netlifi LIEN: https://cc1dhelftdevops.netlify.app/
