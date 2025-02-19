@@ -16,6 +16,6 @@ Ce projet est destiné à valider les connaissances en DevOps des élèves de 3�
 ![Pull Requests](https://img.shields.io/github/issues-pr/arthurDh59/CC1DHELFT)
 ![Repo Size](https://img.shields.io/github/repo-size/arthurDh59/CC1DHELFT)
 ![Code Size](https://img.shields.io/github/languages/code-size/arthurDh59/CC1DHELFT)
-![Build Status](https://github.com/arthurDh59/CC1DHELFT/actions/workflows/main.yml/badge.svg)
+
 
 herberger sur netlifi LIEN: https://cc1dhelftdevops.netlify.app/
