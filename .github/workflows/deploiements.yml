@@ -1,0 +1,37 @@
+name: Déploiement sur Netlify
+
+on:
+  push:
+    branches:
+      - main  # Modifier si nécessaire
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Cloner le repo
+        uses: actions/checkout@v3
+
+      - name: Installer Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18  # Modifier selon ton projet
+
+      - name: Installer les dépendances
+        run: npm install
+
+      - name: Construire le projet
+        run: npm run build  # Modifier si nécessaire
+
+      - name: Déployer sur Netlify
+        uses: nwtgck/actions-netlify@v2
+        with:
+          publish-dir: ./build  # Modifier si nécessaire (ex: dist pour Vue/Nuxt)
+          production-branch: main
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-message: "Déploiement automatique depuis GitHub Actions"
+          enable-pull-request-comment: false
+          overwrites-pull-request-comment: false
+          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
